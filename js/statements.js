@@ -48,3 +48,98 @@ c = a + b;    // Assign the sum of a and b to c */
     
 // }
 // sayHello(jahid)
+
+
+//  IF STATEMENTS = if a condition is True, Execute same code
+//                  if Not, do something else
+
+// let age = 20;
+
+// if (age >= 18) {
+//    console.log("You are old enough to center this site");
+    
+// }else{
+//     console.log("You must be 18+ to enter this site");
+    
+// }
+
+// let isStudent = false;
+
+// if (isStudent) {
+//     console.log("You are a student");
+    
+// }else{
+//     console.log("You are Not a student!");
+    
+// }
+
+
+
+// let age = 18;
+
+// let hasLicense = true;
+
+// if (age >= 16) {
+//     console.log("you are old enough to drive");
+    
+//     if (hasLicense) {
+//        console.log("You have your license!");
+        
+//     }else{
+//         console.log("you do not have your license yet!");
+        
+//     }
+//   }else{
+//     console.log("you must be 16+ to have a license");
+    
+// }
+
+
+// let age = 0;
+
+// if (age >= 100) {
+//     console.log('You are Too old to enter thi site');
+    
+// }
+// else if (age == 0){
+//     console.log("You cant't enter. You were just born.");
+    
+// }else if (age >= 18){
+//     console.log("You are old enough to enter this site");
+    
+// }else if (age < 0){
+//     console.log("You are cant't be below 0");
+    
+// }else{
+//     console.log("You must be 18+ to enter this site");
+    
+// }
+
+const myText = document.getElementById("myText")
+const mySubmit = document.getElementById("mySubmit")
+const resultEliement = document.getElementById("resultEliement")
+
+let age;
+
+mySubmit.onclick = () => {
+     age = myText.value;
+     age = Number(age);
+
+    if (age >= 100) {
+        resultEliement.textContent =`You are Too old to enter thi site`;
+        
+    }
+    else if (age == 0){
+        resultEliement.textContent =`You cant't enter. You were just born.`;
+    }else if (age >= 18){
+        resultEliement.textContent =`You are old enough to enter this site`;
+       
+        
+    }else if (age < 0){
+        resultEliement.textContent =`You are cant't be below 0`;
+                
+    }else{
+        resultEliement.textContent =`You must be 18+ to enter this site`;
+              
+    }
+}

@@ -141,7 +141,7 @@
 
 // CHILDNODES
 
-const  child = document.querySelector('ul')
-console.log(child.children);
-console.log(child.children[2]);
-console.log(child.childNodes);
+// const  child = document.querySelector('ul')
+// console.log(child.children);
+// console.log(child.children[2]);
+// console.log(child.childNodes);
